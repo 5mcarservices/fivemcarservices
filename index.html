@@ -3,123 +3,467 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FiveM Car Services</title>
+
+    <title>Blackline Customs | FiveM Car Services</title>
+    <meta name="description" content="Blackline Customs - Professional FiveM car services including debadging, window tint and UK plates.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">FiveM <span>Car Services</span></div>
+    <!-- Background -->
+    <div class="site-bg"></div>
+    <div class="noise"></div>
 
-        <nav>
-            <button class="nav-btn active" onclick="showPage('home', this)">Home</button>
-            <button class="nav-btn" onclick="showPage('prices', this)">Price List</button>
-            <button class="nav-btn" onclick="showPage('team', this)">The Team</button>
-            <button class="nav-btn purchase" onclick="purchase()">Purchase</button>
-        </nav>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="#home" class="brand">
+                <div class="brand-logo">
+                    <img src="logo.png" alt="Blackline Customs Logo">
+                </div>
+
+                <div class="brand-text">
+                    <strong>BLACKLINE</strong>
+                    <span>CUSTOMS</span>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#services">Services</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#services" class="nav-button">
+                View Services
+                <span>→</span>
+            </a>
+
+            <button class="mobile-menu" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
     </header>
 
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+
+    <!-- Hero -->
     <main>
 
-        <!-- HOME -->
-        <section id="home" class="page active-page">
-            <div class="hero">
-                <div class="hero-content">
-                    <p class="small-title">WELCOME TO</p>
+        <section class="hero" id="home">
 
-                    <h1>FiveM <span>Car Services</span></h1>
+            <div class="hero-content">
 
-                    <p class="description">
-                        Professional FiveM vehicle services at affordable prices.
-                        Get your vehicle looking exactly how you want it.
-                    </p>
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    FIVEM AUTOMOTIVE SERVICES
+                </div>
 
-                    <div class="hero-buttons">
-                        <button class="main-btn" onclick="showPage('prices', document.querySelectorAll('.nav-btn')[1])">
-                            View Price List
-                        </button>
+                <h1>
+                    BUILT TO LOOK
+                    <span>BETTER.</span>
+                </h1>
 
-                        <button class="discord-btn" onclick="purchase()">
-                            Join Discord
-                        </button>
+                <p>
+                    Professional vehicle styling and cosmetic services
+                    for the FiveM community. Clean work, sharp finishes
+                    and prices that make sense.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#services" class="primary-button">
+                        Explore Services
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#team" class="secondary-button">
+                        Meet The Team
+                    </a>
+                </div>
+
+                <div class="hero-details">
+                    <div>
+                        <strong>03</strong>
+                        <span>Services</span>
+                    </div>
+
+                    <div class="detail-line"></div>
+
+                    <div>
+                        <strong>£2.50</strong>
+                        <span>Starting From</span>
+                    </div>
+
+                    <div class="detail-line"></div>
+
+                    <div>
+                        <strong>FIVEM</strong>
+                        <span>Specialists</span>
                     </div>
                 </div>
 
-                <div class="car-glow"></div>
-            </div>
-        </section>
-
-
-        <!-- PRICE LIST -->
-        <section id="prices" class="page">
-
-            <div class="section-title">
-                <p>OUR SERVICES</p>
-                <h2>Price <span>List</span></h2>
-                <div class="line"></div>
             </div>
 
-            <div class="price-container">
+            <div class="hero-visual">
 
-                <div class="price-card">
-                    <div class="icon">🇬🇧</div>
-                    <h3>UK PLATES</h3>
-                    <p>Custom UK style vehicle plates.</p>
-                    <div class="price">£2.50</div>
+                <div class="visual-glow"></div>
+
+                <div class="car-frame">
+                    <div class="frame-corner top-left"></div>
+                    <div class="frame-corner top-right"></div>
+                    <div class="frame-corner bottom-left"></div>
+                    <div class="frame-corner bottom-right"></div>
+
+                    <div class="car-placeholder">
+                        <div class="car-placeholder-icon">◆</div>
+                        <span>YOUR VEHICLE</span>
+                        <small>PREMIUM FINISH</small>
+                    </div>
                 </div>
 
-                <div class="price-card">
-                    <div class="icon">🚗</div>
-                    <h3>DEBADGING</h3>
-                    <p>Remove unwanted badges from your vehicle.</p>
-                    <div class="price">£2.50</div>
-                </div>
-
-                <div class="price-card">
-                    <div class="icon">🪟</div>
-                    <h3>WINDOW TINTS</h3>
-                    <p>Give your vehicle a clean tinted look.</p>
-                    <div class="price">£2.50</div>
+                <div class="visual-label">
+                    <span>01</span>
+                    <div></div>
+                    <p>PRECISION<br>FINISHING</p>
                 </div>
 
             </div>
-
-            <button class="main-btn price-purchase" onclick="purchase()">
-                Purchase A Service
-            </button>
 
         </section>
 
 
-        <!-- TEAM -->
-        <section id="team" class="page">
+        <!-- Services -->
+        <section class="services section" id="services">
 
-            <div class="section-title">
-                <p>MEET THE</p>
-                <h2>The <span>Team</span></h2>
-                <div class="line"></div>
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">01 / SERVICES</span>
+
+                    <h2>
+                        MAKE YOUR CAR
+                        <span>STAND OUT.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Simple upgrades. Clean execution.
+                    Every service is designed to give your
+                    vehicle a sharper, more personal finish.
+                </p>
+
             </div>
 
-            <div class="team-container">
 
-                <div class="team-card">
-                    <div class="avatar">K</div>
-                    <h3>Kai</h3>
-                    <p class="role">OWNER</p>
-                    <p class="team-description">
-                        Owner of FiveM Car Services
+            <div class="service-grid">
+
+                <!-- Debadge -->
+                <article class="service-card">
+
+                    <div class="service-top">
+                        <span class="service-number">01</span>
+
+                        <div class="service-icon">
+                            <span>◆</span>
+                        </div>
+                    </div>
+
+                    <div class="service-image debadge-image">
+                        <div class="image-overlay"></div>
+
+                        <div class="image-text">
+                            <span>EXTERIOR</span>
+                            <strong>DEBADGE</strong>
+                        </div>
+                    </div>
+
+                    <div class="service-info">
+                        <h3>Debadge Services</h3>
+
+                        <p>
+                            Remove unwanted vehicle badges for a
+                            cleaner, more understated appearance.
+                        </p>
+
+                        <div class="service-bottom">
+                            <div>
+                                <small>FROM</small>
+                                <strong>£2.50</strong>
+                            </div>
+
+                            <button class="service-arrow" aria-label="Debadge service">
+                                ↗
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Window Tint -->
+                <article class="service-card featured">
+
+                    <div class="popular">
+                        POPULAR
+                    </div>
+
+                    <div class="service-top">
+                        <span class="service-number">02</span>
+
+                        <div class="service-icon">
+                            <span>▣</span>
+                        </div>
+                    </div>
+
+                    <div class="service-image tint-image">
+                        <div class="image-overlay"></div>
+
+                        <div class="image-text">
+                            <span>GLASS</span>
+                            <strong>TINT</strong>
+                        </div>
+                    </div>
+
+                    <div class="service-info">
+                        <h3>Window Tint</h3>
+
+                        <p>
+                            Give your vehicle a darker, cleaner look
+                            with professionally styled window tint.
+                        </p>
+
+                        <div class="service-bottom">
+                            <div>
+                                <small>FROM</small>
+                                <strong>£5.00</strong>
+                            </div>
+
+                            <button class="service-arrow" aria-label="Window tint service">
+                                ↗
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- UK Plates -->
+                <article class="service-card unavailable">
+
+                    <div class="service-top">
+                        <span class="service-number">03</span>
+
+                        <div class="service-icon">
+                            <span>GB</span>
+                        </div>
+                    </div>
+
+                    <div class="service-image plate-image">
+                        <div class="image-overlay"></div>
+
+                        <div class="image-text">
+                            <span>REGISTRATION</span>
+                            <strong>UK PLATES</strong>
+                        </div>
+
+                        <div class="unavailable-label">
+                            CURRENTLY UNAVAILABLE
+                        </div>
+                    </div>
+
+                    <div class="service-info">
+                        <h3>UK Plates</h3>
+
+                        <p>
+                            UK-style plates for a more authentic
+                            British road appearance in FiveM.
+                        </p>
+
+                        <div class="service-bottom">
+                            <div>
+                                <small>PRICE</small>
+                                <strong>£2.50</strong>
+                            </div>
+
+                            <span class="status">
+                                Unavailable
+                            </span>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section class="about section">
+
+            <div class="about-image">
+
+                <div class="about-logo">
+                    <img src="logo.png" alt="Blackline Customs">
+                </div>
+
+                <div class="about-image-label">
+                    <span>EST.</span>
+                    <strong>FIVEM</strong>
+                </div>
+
+            </div>
+
+            <div class="about-content">
+
+                <span class="section-number">02 / ABOUT US</span>
+
+                <h2>
+                    DETAILS MAKE
+                    <span>THE DIFFERENCE.</span>
+                </h2>
+
+                <p>
+                    Blackline Customs is built around one thing:
+                    making your vehicle look exactly how you want it.
+                </p>
+
+                <p>
+                    From subtle debadging to darker glass, our services
+                    are designed for players who care about the small
+                    details that make a car feel personal.
+                </p>
+
+                <div class="about-stats">
+
+                    <div>
+                        <strong>£2.50</strong>
+                        <span>Lowest Price</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>Services Listed</span>
+                    </div>
+
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Community</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Team -->
+        <section class="team section" id="team">
+
+            <div class="section-heading centered">
+
+                <span class="section-number">03 / THE TEAM</span>
+
+                <h2>
+                    THE PEOPLE
+                    <span>BEHIND THE CARS.</span>
+                </h2>
+
+                <p>
+                    Meet the owners responsible for keeping
+                    Blackline Customs running.
+                </p>
+
+            </div>
+
+
+            <div class="team-grid">
+
+                <article class="team-card">
+
+                    <div class="team-photo">
+                        <img src="logo.png" alt="Kai">
+                    </div>
+
+                    <div class="team-info">
+                        <span>OWNER</span>
+                        <h3>Kai</h3>
+                        <p>Founder & Owner</p>
+                    </div>
+
+                    <div class="team-number">
+                        01
+                    </div>
+
+                </article>
+
+
+                <article class="team-card">
+
+                    <div class="team-photo">
+                        <img src="logo.png" alt="Bigwok">
+                    </div>
+
+                    <div class="team-info">
+                        <span>OWNER</span>
+                        <h3>Bigwok</h3>
+                        <p>Founder & Owner</p>
+                    </div>
+
+                    <div class="team-number">
+                        02
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact CTA -->
+        <section class="contact section" id="contact">
+
+            <div class="contact-inner">
+
+                <div>
+                    <span class="section-number">04 / GET IN TOUCH</span>
+
+                    <h2>
+                        READY TO CHANGE
+                        <span>YOUR RIDE?</span>
+                    </h2>
+
+                    <p>
+                        Choose your service and get your vehicle
+                        looking the way it should.
                     </p>
                 </div>
 
-                <div class="team-card">
-                    <div class="avatar">B</div>
-                    <h3>Bigwok</h3>
-                    <p class="role">OWNER</p>
-                    <p class="team-description">
-                        Owner of FiveM Car Services
-                    </p>
-                </div>
+                <a href="#services" class="contact-button">
+                    VIEW PRICE LIST
+                    <span>↗</span>
+                </a>
 
             </div>
 
@@ -128,9 +472,38 @@
     </main>
 
 
+    <!-- Footer -->
     <footer>
-        <p>Made By <span>Kai</span> & <span>BigWok</span></p>
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Blackline Customs">
+                </div>
+
+                <div>
+                    <strong>BLACKLINE CUSTOMS</strong>
+                    <span>FIVEM CAR SERVICES</span>
+                </div>
+
+            </div>
+
+            <p>
+                © 2026 Blackline Customs. All rights reserved.
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#team">Team</a>
+            </div>
+
+        </div>
+
     </footer>
+
 
     <script src="script.js"></script>
 
